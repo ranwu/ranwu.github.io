@@ -15,9 +15,18 @@ url: "https://ranwuer.com" # the base hostname & protocol for your site
 twitter_username: ranwuer
 github_username:  ranwu
 permalink: pretty
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown
 
 # Google services
 google_analytics: UA-80732671-1
+
+# compress html
+compress_html:
+  clippings:      all
+  comments:       ["<!--", "-->"]
+  endings:        all
+  startings:      [html, head, body]
