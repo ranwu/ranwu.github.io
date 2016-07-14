@@ -2,7 +2,10 @@
 layout: post
 title:  "Codis集群线上实战"
 date:   2016-07-12 21:59:33 +0800
+author: ranwuer
 categories: work
+tags:   redis, 集群, 豌豆荚codis
+excerpt:    本文主要介绍了豌豆荚开发的Codis中间件在Redis集群中的应用，基于zookeeper+go+java，都是线上实战记录，干货满满！
 ---
 
 ## #1 安装Codis集群环境
