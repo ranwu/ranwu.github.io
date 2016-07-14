@@ -2,7 +2,7 @@
 layout: post
 title:  "给jekyll博客添加favicon"
 date:   2016-07-13 22:12:33 +0800
-categories: jekyll tutor
+categories: work
 ---
 
 ## 1. 下载favicon
