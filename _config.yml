@@ -19,7 +19,11 @@ sass:
   style: compressed
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "fenced_code_blocks", "with_toc_data"]
 
 # Google services
 google_analytics: UA-80732671-1
@@ -30,3 +34,5 @@ compress_html:
   comments:       ["<!--", "-->"]
   endings:        all
   startings:      [html, head, body]
+
+gems: [jemoji]

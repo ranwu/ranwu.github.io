@@ -11,12 +11,12 @@ excerpt: 本文主要介绍了Ruby on Rails在Centos7环境下的搭建，主要
 安装rbenv是来控制ruby的版本，非常方便。
 
 运行以下代码来安装基本依赖环境：
-{% highlight shell %}
+{% highlight bash %}
 sudo yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
 {% endhighlight %}
 
 以最简单的方式安装rbenv：
-{% highlight shell %}
+{% highlight bash %}
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -36,7 +36,7 @@ source ~/.bash_profile
 可以自己决定安装哪个版本的ruby，安装多个版本的ruby也可以，可以用rbenv来自由切换ruby的版本。
 
 下面安装ruby的最新版：
-{% highlight shell %}
+{% highlight bash %}
 rbenv install -v 2.3.1
 rbenv global 2.3.1
 {% endhighlight %}
@@ -44,12 +44,12 @@ rbenv global 2.3.1
 `global`命令设置ruby的默认版本。如果想指定任意版本为默认版本，那么请运行这个命令。
 
 验证ruby的版本：
-{% highlight shell %}
+{% highlight bash %}
 ruby -v
 {% endhighlight %}
 
 更换`gem`源：
-{% highlight shell %}
+{% highlight bash %}
 gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
 gem sources -l
 *** CURRENT SOURCES ***
@@ -59,28 +59,28 @@ https://ruby.taobao.org
 
 在安装`gem`的时候，`Rubygems`默认会为每个`gem`生成本地文档，然而这将花费大量时间，建议是关闭它：
 
-{% highlight shell %}
+{% highlight bash %}
 echo "gem: --no-document" > ~/.gemrc
 {% endhighlight %}
 
 安装`bundler gem`来管理应用依赖：
-{% highlight shell %}
+{% highlight bash %}
 gem install bundler
 {% endhighlight%}
 
 ## 安装Rails
 安装`rails 5.0`
-{% highlight shell %}
+{% highlight bash %}
 gem install rails -v 5.0.0
 {% endhighlight%}
 
 如果你安装了新版本的`Ruby`或包含命令`gem`，那么需要执行`rehash`子命令，作用是为所有被`rbenv`所知道的`Ruby`命令安装中间件（shims）：
-{% highlight shell %}
+{% highlight bash %}
 rbenv rehash
 {% endhighlight%}
 
 查看`rails`的版本
-{% highlight shell %}
+{% highlight bash %}
 rails -v
 {% endhighlight%}
 
@@ -90,13 +90,13 @@ rails -v
 安装nvm
 : Node Version Manager，管理`Nodejs`的版本（推荐的做法）
 
-{% highlight shell %}
+{% highlight bash %}
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
 source ~/.bashrc
 {% endhighlight%}
 
 检验是否安装成功
-{% highlight shell %}
+{% highlight bash %}
 command -v nvm
 
 //nvm --version 查看版本号
@@ -104,7 +104,7 @@ command -v nvm
 当敲完上面的字符后，如果输出`nvm`，说明安装成功。
 
 安装最新版的`Nodejs`：
-{% highlight shell %}
+{% highlight bash %}
 nvm install node
 
 //或者安装特定版本的node
@@ -112,7 +112,7 @@ nvm install node 4.4.7
 {% endhighlight%}
 
 使用此版本的`node`
-{% highlight shell %}
+{% highlight bash %}
 nvm use node
 
 //或者使用特定版本的node
@@ -120,7 +120,8 @@ nvm use node 4.4.7
 {% endhighlight%}
 
 查看`Nodejs`版本号
-{% highlight shell %}
+{% highlight bash %}
 node -v
 {% endhighlight%}
+:+1:
 
