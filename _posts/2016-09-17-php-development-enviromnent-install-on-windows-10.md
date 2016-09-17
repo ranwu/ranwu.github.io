@@ -9,11 +9,11 @@ tags: php win10 dev-environment
 excerpt: 主要总结了php在windows10下开发环境的建立过程（正确的姿势）
 ---
 
-PHP 开发环境的搭建想必是每位开发者都必须经历的过程。目前来说，国内众多大大小小的公司使用 Windows 作为开发环境毕竟占多数。
+PHP 开发环境的搭建想必是每位开发者都必须经历的过程。目前来说，国内众多大大小小的公司使用 Windows 作为开发环境毕竟占多数，
 那些配了 Mac 的公司毕竟还是比较小众。本文章主要记录了我在 Windows 环境下搭建开发环境的一些经验总结。
 
 ### 环境介绍
-主要用到了4个软件，这里介绍一下 Laragon。Laragon 是一个 Windows 下的 PHP 运行环境。类似于 wamp 和 xampp。这些软件
+主要用到了4个软件，这里介绍一下 Laragon。Laragon 是一个 Windows 下的 PHP 集成安装包。类似于 wamp 和 xampp。这些软件
 都可以较为容易的安装 PHP 开发环境。
 
 为什么要用 Laragon？主要是因为在使用 PhpStorm 有些功能的时候需要一个本地 PHP 运行环境，所以 Laragon 可以很好的管理
