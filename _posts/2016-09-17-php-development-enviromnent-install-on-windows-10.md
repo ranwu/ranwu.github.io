@@ -108,9 +108,11 @@ sites:
 ![laragonHosts](/photo/laragonHosts.png)
 
 然后打开了 hosts 文件，加入以下内容：
+
 ```
 192.168.10.10   yiis.dev
 ```
+
 这里的域名要和`sites`里的域名一样。
 
 >启动 Homestead
