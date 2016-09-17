@@ -62,12 +62,15 @@ vagrant box add laravel/homestead
 
 安装 Homestead 只需要克隆一下这个项目即可。这个 Homestead 在你的家目录，Homestead
 box 就是从这个目录启动。
+
 ```
 cd ~
 git clone https://github.com/laravel/homestead.git Homestead
 ```
+
 然后进入 Homestead 目录，并运行`bash init.sh`命令来生成`Homestead.yaml`配置
 文件。这个`Homestead.yaml`配置文件会放在`~/.homestead`隐藏目录下。
+
 ```
 bash init.sh
 ```
