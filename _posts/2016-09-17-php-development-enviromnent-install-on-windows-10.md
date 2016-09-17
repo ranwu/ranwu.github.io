@@ -138,6 +138,7 @@ vagrant up
 打开 cmder，进入`C:\laragon\www`目录。
 
 修改 composer 镜像源：
+
 ```
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
