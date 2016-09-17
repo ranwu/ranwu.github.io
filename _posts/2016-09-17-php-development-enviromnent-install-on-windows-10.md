@@ -118,19 +118,23 @@ sites:
 >启动 Homestead
 
 打开 cmder， 进入用户根目录：
+
 ```
 cd~ #没有空格
 ```
 
 然后进入 Homestead 目录：
+
 ```
 cd Homestead
 ```
 
 输入：
+
 ```
 vagrant up
 ```
+
 启动即将开始。
 
 **2. 安装 Yii 项目文件**
@@ -144,16 +148,20 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
 查看修改情况：
+
 ```
 composer config -gl
 ```
+
 ![composerMirror](/photo/composerMirror.png)
 
 安装 Yii 框架
+
 ```
 composer global require "fxp/composer-asset-plugin:^1.2.0"
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ```
+
 运行完毕后会在`C:\laragon\www`目录下看到一个`basic`目录，就是我们创建的一个
 Yii 项目了。
 
